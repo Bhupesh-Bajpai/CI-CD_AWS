@@ -3,8 +3,8 @@ const mongoose = require('mongoose');
 const app = express();
 const cors = require("cors")
 
-const adminRouter = require('../backend/routes/admin');
-const userRouter = require('../backend/routes/user');
+const adminRouter = require('../routes/admin');
+const userRouter = require('../routes/user');
 
 app.use(express.json());
 app.use(cors())
