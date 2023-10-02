@@ -33,6 +33,9 @@ router.post('/signup', async (req, res) => {
     const courses = await Course.find({published: true});
     res.json({ courses });
   });
+  router.get('/courses/id1', authenticateJwt, async (req, res) => {
+   console.log("ci added");
+  });
   router.get('/courses2', authenticateJwt, async (req, res) => {
    console.log("just for checking")
   });
